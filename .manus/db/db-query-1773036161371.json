@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `wallets` MODIFY COLUMN `balance` decimal(10,2) NOT NULL DEFAULT '0.00';\nALTER TABLE `wallets` ADD `lowBalanceThreshold` decimal(10,2) DEFAULT '10.00' NOT NULL;\nALTER TABLE `wallets` ADD `lastLowBalanceNotificationAt` timestamp;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4FPnFDnBkVtaQ8H.root --database gdnadmj9v3DH4g6eWAuR7v --execute ALTER TABLE `wallets` MODIFY COLUMN `balance` decimal(10,2) NOT NULL DEFAULT '0.00';\nALTER TABLE `wallets` ADD `lowBalanceThreshold` decimal(10,2) DEFAULT '10.00' NOT NULL;\nALTER TABLE `wallets` ADD `lastLowBalanceNotificationAt` timestamp;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1012
+}
